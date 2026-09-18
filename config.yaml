@@ -1,0 +1,290 @@
+port: 3080
+socks-port: 3090
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+proxy-groups:
+- name: 𝑷𝒓𝒐𝒙𝒚
+  type: select
+  proxies:
+  - DIRECT
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Egern.png
+  hidden: false
+- name: 𝑮𝒐𝒐𝒈𝒍𝒆
+  type: select
+  proxies:
+  - 𝑷𝒓𝒐𝒙𝒚
+  - DIRECT
+  icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Google.png
+  hidden: false
+- name: 𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎
+  type: select
+  proxies:
+  - 𝑷𝒓𝒐𝒙𝒚
+  - DIRECT
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Instagram.png
+  hidden: true
+- name: 𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎
+  type: select
+  proxies:
+  - 𝑷𝒓𝒐𝒙𝒚
+  - DIRECT
+  icon: https://upload.wikimedia.org/wikipedia/commons/0/08/Telegram_Premium.png
+  hidden: true
+- name: 𝒀𝒐𝒖𝒕𝒖𝒃𝒆
+  type: select
+  proxies:
+  - 𝑷𝒓𝒐𝒙𝒚
+  - DIRECT
+  icon: https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/youtube.png
+  hidden: false
+- name: 𝑻𝒘𝒊𝒕𝒕𝒆𝒓
+  type: select
+  proxies:
+  - 𝑷𝒓𝒐𝒙𝒚
+  - DIRECT
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
+  hidden: true
+- name: 𝑻𝒊𝒌𝑻𝒐𝒌
+  type: select
+  proxies:
+  - 𝑷𝒓𝒐𝒙𝒚
+  - DIRECT
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/tiktok(1).png
+  hidden: false
+- name: 𝑨𝑰
+  type: select
+  proxies:
+  - 𝑷𝒓𝒐𝒙𝒚
+  - DIRECT
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png
+  hidden: false
+- name: 𝑨𝒑𝒑𝒍𝒆
+  type: select
+  proxies:
+  - 𝑷𝒓𝒐𝒙𝒚
+  - DIRECT
+  icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applespringloaded.png
+  hidden: false
+- name: 𝑯𝑲
+  type: select
+  proxies:
+  - 𝑷𝒓𝒐𝒙𝒚
+  - DIRECT
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+  hidden: true
+- name: 𝑼𝑺
+  type: select
+  proxies:
+  - 𝑷𝒓𝒐𝒙𝒚
+  - DIRECT
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+  hidden: true
+- name: 𝑬𝑼
+  type: select
+  proxies:
+  - 𝑷𝒓𝒐𝒙𝒚
+  - DIRECT
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png
+  hidden: true
+- name: 𝑭𝒊𝒏𝒂𝒍
+  type: select
+  proxies:
+  - 𝑷𝒓𝒐𝒙𝒚
+  - DIRECT
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+  hidden: false
+- name: 𝑫𝑰𝑹𝑬𝑪𝑻
+  type: select
+  proxies:
+  - DIRECT
+  hidden: true
+- name: 𝑹𝑬𝑱𝑬𝑪𝑻
+  type: select
+  proxies:
+  - REJECT
+  hidden: true
+rule-providers:
+  r05:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r05.yaml
+    path: ./rules/r05.yaml
+    interval: 86400
+  r06:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r06.yaml
+    path: ./rules/r06.yaml
+    interval: 86400
+  r07:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r07.yaml
+    path: ./rules/r07.yaml
+    interval: 86400
+  r08:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r08.yaml
+    path: ./rules/r08.yaml
+    interval: 86400
+  r09:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r09.yaml
+    path: ./rules/r09.yaml
+    interval: 86400
+  r10:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r10.yaml
+    path: ./rules/r10.yaml
+    interval: 86400
+  r11:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r11.yaml
+    path: ./rules/r11.yaml
+    interval: 86400
+  r12:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r12.yaml
+    path: ./rules/r12.yaml
+    interval: 86400
+  r13:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r13.yaml
+    path: ./rules/r13.yaml
+    interval: 86400
+  r14:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r14.yaml
+    path: ./rules/r14.yaml
+    interval: 86400
+  r15:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r15.yaml
+    path: ./rules/r15.yaml
+    interval: 86400
+  r16:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r16.yaml
+    path: ./rules/r16.yaml
+    interval: 86400
+  r17:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r17.yaml
+    path: ./rules/r17.yaml
+    interval: 86400
+  r18:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r18.yaml
+    path: ./rules/r18.yaml
+    interval: 86400
+  r20:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r20.yaml
+    path: ./rules/r20.yaml
+    interval: 86400
+  r21:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r21.yaml
+    path: ./rules/r21.yaml
+    interval: 86400
+  r22:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r22.yaml
+    path: ./rules/r22.yaml
+    interval: 86400
+  r23:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r23.yaml
+    path: ./rules/r23.yaml
+    interval: 86400
+  r24:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r24.yaml
+    path: ./rules/r24.yaml
+    interval: 86400
+  r26:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://cdn.jsdelivr.net/gh/AWelook/clash-config@main/rules/r26.yaml
+    path: ./rules/r26.yaml
+    interval: 86400
+rules:
+- DOMAIN,msmp.abchina.com.cn,𝑹𝑬𝑱𝑬𝑪𝑻
+- DOMAIN,raw.githubusercontent.com,𝑷𝒓𝒐𝒙𝒚
+- DOMAIN,api.github.com,𝑷𝒓𝒐𝒙𝒚
+- DOMAIN-SUFFIX,nebula-media.org,𝑷𝒓𝒐𝒙𝒚
+- RULE-SET,r05,𝑹𝑬𝑱𝑬𝑪𝑻
+- RULE-SET,r06,𝑹𝑬𝑱𝑬𝑪𝑻
+- RULE-SET,r07,𝑹𝑬𝑱𝑬𝑪𝑻
+- RULE-SET,r08,𝑹𝑬𝑱𝑬𝑪𝑻
+- RULE-SET,r09,𝑨𝑰
+- RULE-SET,r10,𝑷𝒓𝒐𝒙𝒚
+- RULE-SET,r11,𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎
+- RULE-SET,r12,𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎
+- RULE-SET,r13,𝑫𝑰𝑹𝑬𝑪𝑻
+- RULE-SET,r14,𝒀𝒐𝒖𝒕𝒖𝒃𝒆
+- RULE-SET,r15,𝑻𝒘𝒊𝒕𝒕𝒆𝒓
+- RULE-SET,r16,𝑻𝒊𝒌𝑻𝒐𝒌
+- RULE-SET,r17,𝑮𝒐𝒐𝒈𝒍𝒆
+- RULE-SET,r18,𝑷𝒓𝒐𝒙𝒚
+- RULE-SET,r20,𝑷𝒓𝒐𝒙𝒚
+- RULE-SET,r21,𝑨𝒑𝒑𝒍𝒆
+- RULE-SET,r22,𝑨𝒑𝒑𝒍𝒆
+- RULE-SET,r23,𝑫𝑰𝑹𝑬𝑪𝑻
+- RULE-SET,r24,𝑫𝑰𝑹𝑬𝑪𝑻
+- RULE-SET,r26,𝑫𝑰𝑹𝑬𝑪𝑻
+- GEOIP,CN,𝑫𝑰𝑹𝑬𝑪𝑻,no-resolve
+- MATCH,𝑭𝒊𝒏𝒂𝒍
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  nameserver: &id001
+  - https://west.dh-global-team.net:438/dns-query
+  - h3://dns.alidns.com/dns-query
+  fallback: *id001
+  fake-ip-filter:
+  - +.lan
+  - +.local
+  - localhost.ptlogin2.qq.com
